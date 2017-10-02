@@ -1,0 +1,66 @@
+ 
+
+#header {
+	 
+	position: absolute;
+	z-index:999;
+	top: 0;
+	left: 0;
+	right: 0;
+	 
+	.logo {
+		display: inline-block;
+		a {
+			display: block;
+		}
+
+		@include media('>=tablet') {
+			 
+		}
+
+		@include media('>=desktop') {
+			padding: 40px 0 0 15px;
+			text-align: left;
+		}
+	}
+}
+
+#nav {
+   margin: 0;
+
+	> li{
+		
+		@include media('>=tablet') {
+			display: inline-block;
+			margin: 0 18px;
+		}
+	 }
+}
+.menu {
+	display: inline-block;
+	margin: 62px 0 0;
+	font-size: 14px;
+	color: #fff;
+	float: right;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+		transition: color 0.3s ease-in-out;
+		&:hover {
+			color: #c7b299;
+
+		}
+
+	} 
+	 
+	 
+	@include media('>=tablet') {
+		 
+	}
+
+	 
+}
+.search-open-close {
+	display: none;
+}
