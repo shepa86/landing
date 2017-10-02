@@ -36,10 +36,7 @@ overflow: hidden;
 	z-index: 500;
 }
 }
-.ttt {
-	height: 500px;
-	background: #2f2;
-}
+
 .hero-section{
 .hero-title{
 position: absolute;
@@ -52,4 +49,48 @@ max-width: 550px;
 left: 50%;
 transform: translateX(-50%);
 }
+}
+
+.btn {
+ 
+padding: 18px 38px;
+background: #998675;
+border-radius: 3px;
+text-decoration: none;
+text-transform: uppercase;
+color: #fff;
+
+}
+
+.service-list {
+	padding: 0;
+	margin: 86px 0;
+}
+.services-wrap {
+	display: inline-block;
+	width:25%;
+	padding: 0 15px 0;
+	text-align: center;
+	a{
+		color: #3b3635;
+		text-decoration: none;
+		
+	}
+	p {
+		color: #8c8c8c;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+.ttt {
+	height: 500px;
+	background: #2f2;
 }

@@ -100,20 +100,24 @@ left: 50%;
 transform: translateX(-50%);
 li {
     display: inline-block;
-
+    vertical-align: middle;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #8f9091;
     margin: 5px;
-    list-style: none;
-    
+    list-style: none;    
     transition: background .3s ease-in-out;
     &:hover {
-    background: #c7b299;;
+    background: #c7b299;
     }
 }
-
+.slick-active {
+background: none;
+border: 2px solid  #c7b299;
+width: 12px;
+height: 12px;
+ }
 button {
 display: block;
 text-indent: -9999px;
@@ -123,6 +127,9 @@ width: 100%;
 height: 100%;
 &:active {
     border-color: #fff;
+}
+&:focus {
+    outline:0;
 }
 }
 
