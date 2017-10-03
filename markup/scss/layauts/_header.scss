@@ -1,4 +1,7 @@
  
+body {
+	
+}
 
 #header {
 	 
@@ -27,17 +30,19 @@
 
 #nav {
    margin: 0;
+   position: relative;
+   
 
 	> li{
 		
-		@include media('>=tablet') {
+		@include media('>=desktop') {
 			display: inline-block;
 			margin: 0 18px;
 		}
 	 }
 }
 .menu {
-	display: inline-block;
+	
 	margin: 62px 0 0;
 	font-size: 14px;
 	color: #fff;
@@ -55,12 +60,63 @@
 	} 
 	 
 	 
-	@include media('>=tablet') {
-		 
+	@include media('>=desktop') {
+	 
 	}
 
 	 
 }
-.search-open-close {
+.search-open-close, .slide  {
 	display: none;
+}
+
+.nav-opener {
+	background: #998675 none repeat scroll 0 0;
+    border-radius: 2px;
+    float: right;
+    height: 40px;
+    margin: 20px 5px 0 0;
+    position: relative;
+    transition: margin 0.3s ease-in-out 0s;
+    width: 40px;
+    z-index: 999;
+    left: 17%;
+    right: 17;
+    display: block;
+
+    &:hover {
+		opacity: .9;
+	}
+	span,
+	&:before,
+	&:after {
+		@include animate(all);
+
+		background: $white;
+		border-radius: 4px;
+		position: absolute;
+		top: 50%;
+		left: 15%;
+		right: 15%;
+		height: 4px;
+		margin-top: -2px;
+
+		@include media ('>=tablet') {
+			left: 17%;
+			right: 17%;
+		}
+	}
+    &:before,
+	&:after {
+		content: '';
+		top: 30%;
+	}
+
+	&:after {
+		top: 70%;
+	}
+    
+@include media('>=desktop') {
+	display: none;	 
+	}
 }
