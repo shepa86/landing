@@ -1,5 +1,5 @@
 body{
-	 
+	min-width: 320px; 
 }
 
 #wrapper {
@@ -15,19 +15,23 @@ body{
 }
 
 .container {
+	
 	max-width: 1230px;
 	padding: 0 15px;
 	margin: 0 auto;
+
 
 	
 }
 
 .hero-section {
-height: 100vh;
+ 
+position: relative;
 overflow: hidden;
 &:before {
 	content:'';
 	position: absolute;
+	 
 	top:0;
 	bottom:0;
 	left: 0;
@@ -35,6 +39,17 @@ overflow: hidden;
 	background: rgba(1,1,1,0.3);
 	z-index: 500;
 }
+@include media('>=desktop') {
+	height: 100vh;
+	min-height: 500px;	 
+	&:before {
+	height: 100vh;
+	min-height: 500px;
+	 
+	
+}
+	}
+
 }
 
 .hero-section{
@@ -59,6 +74,13 @@ border-radius: 3px;
 text-decoration: none;
 text-transform: uppercase;
 color: #fff;
+transition: background .5s ease-in-out;
+ 
+&:hover {
+background: #443020;
+
+
+}
 
 }
 
@@ -92,5 +114,5 @@ color: #fff;
 
 .ttt {
 	height: 500px;
-	background: #2f2;
+	background: #3f2;
 }
